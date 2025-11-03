@@ -1,0 +1,210 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scrollbar-width: none;
+    }
+
+    body {
+      font-family: "Arial", "Helvetica", sans-serif;
+      line-height: 1.5;
+      background: linear-gradient(135deg, #008000 0%, #cc0a21 100%);
+      color: #222;
+      padding: 16px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border: 3px solid #008000;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #cc0a21;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+  
+    header h1 {
+      font-size: 2.4rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .verde {
+      color: #008000;
+    }
+
+    .rojo {
+    color: #cc0a21; 
+    }
+
+
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      margin-left: 20px;
+      padding: 4px 8px;
+      border: 1px solid transparent;
+      transition: 0.3s;
+    }
+    
+    nav a:hover {
+      background: #008000;
+      color: #fff;
+      border-radius: 4px;
+      border: 1px solid #cc0a21;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border: 3px solid #008000;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px #cc0a21;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 24px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 18px;
+      border: 2px solid #008000;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .card h2, .card h3 {
+      margin-bottom: 12px;
+      color: #cc0a21;
+    }
+
+    .menu-list li {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      list-style-type: none;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+  .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  }
+
+  .formulario label {
+  font-weight: bold;
+  color: #333;
+  align-self: flex-start;
+  }
+
+  .formulario input[type="text"], .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+
+  .formulario textarea {
+  height: 100px;
+  resize: vertical;
+  }
+
+  .formulario button {
+  background-color: #cc0a21;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #fff;
+      background: linear-gradient(90deg, #008000, #be0e23);
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .opiniones {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  }
+
+  .opinion {
+  background-color: #f4f4f4;
+  border-left: 4px solid #cc0a21;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .opinion h4 {
+  color: #008000;
+  margin-bottom: 5px;
+  }
+
+  .opinion p {
+  color: #333;
+  margin: 0;
+  }
+
+
+
+    @media (max-width: 800px) {
+      .main {
+        grid-template-columns: 1fr;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 16px;
+        margin-top: 8px;
+      }
+    }
