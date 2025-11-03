@@ -16,5 +16,6 @@ if ($conexion->query($sql) === TRUE) {
     echo " Error: No se pudo guardar";
 }
 
-header('Location: index.php');
+header('Location: index.html');
+
 ?>
